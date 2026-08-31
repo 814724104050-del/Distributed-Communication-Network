@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Distributed Communication Network</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Distributed Communication Network</h1>
+<p>Communication Primitives & Message Passing Simulation</p>
+
+<div class="network">
+
+    <div class="process" id="p1">
+        <h2>P1</h2>
+        <p>Process 1</p>
+    </div>
+
+    <div class="process" id="p2">
+        <h2>P2</h2>
+        <p>Process 2</p>
+    </div>
+
+    <div class="process" id="p3">
+        <h2>P3</h2>
+        <p>Process 3</p>
+    </div>
+
+</div>
+
+<div class="controls">
+
+    <h2>Send Message</h2>
+
+    <select id="sender">
+        <option value="P1">P1</option>
+        <option value="P2">P2</option>
+        <option value="P3">P3</option>
+    </select>
+
+    <select id="receiver">
+        <option value="P1">P1</option>
+        <option value="P2">P2</option>
+        <option value="P3">P3</option>
+    </select>
+
+    <input type="text" id="message" placeholder="Enter message">
+
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="broadcastMessage()">Broadcast</button>
+
+</div>
+
+<div class="log">
+    <h2>Communication Log</h2>
+    <div id="logBox"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
